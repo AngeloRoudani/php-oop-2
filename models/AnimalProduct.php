@@ -2,20 +2,26 @@
 
 class AnimalProducts {
 
-    public $food;
-    public $games;
-    public $medicines;
-    public $kennels;
-    public $gadgets;
+    public $productName;
+    public $price;
+    public $category;
+    public $type;
 
-    public function __construct($_food, $_games, $_medicines, $_kennels, $_gadgets) {
+    public function __construct($_productName, $_price, $_category, $_type) {
     
-        $this->food = $_food;
-        $this->games = $_games;
-        $this->medicines = $_medicines;
-        $this->kennels = $_kennels;
-        $this->gadgets = $_gadgets;
+        $this->productName = $_productName;
+        $this->price = $_price;
+        $this->category = $_category;
+        $this->type = $_type;
 
+    }
+
+    public function getInfoProduct() {
+
+        return '<div>'.$this->productName.'</div>
+                <div>'.$this->price.'</div>
+                <div>'.$this->category.'</div>
+                <div>'.$this->type.'</div>'
     }
 
 }
