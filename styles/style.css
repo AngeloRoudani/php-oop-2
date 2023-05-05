@@ -7,3 +7,19 @@
 body {
     background-image: url('../img/bg-img.jpg');
 }
+
+.container {
+    width: 1170px;
+    margin: 5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(100% / 2);
+    padding: 2rem;
+}
+
+.product-img {
+    width: 100%;
+}

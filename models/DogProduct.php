@@ -1,12 +1,12 @@
 <?php
 
-class DogProducts extends AnimalProducts {
+class DogProduct extends AnimalProduct {
 
     public $forDog;
     
-    public function __construct($_productName, $_price, $_category, $_type, $forDog) {
+    public function __construct($_productName, $_productImage, $_price, $_category, $_type, $forDog) {
 
-        parent::__construct($_productName, $_price, $_category, $_type);
+        parent::__construct($_productName, $_productImage, $_price, $_category, $_type);
         $this->forDog = $_fordog;
 
     }

@@ -1,9 +1,9 @@
 <?php
 
-require __DIR__ . '/dataProducts.php';
-require __DIR__ . '/models/AnimalProduct.php';
-require __DIR__ . '/models/DogProduct.php';
-require __DIR__ . '/models/CatProduct.php';
+require __DIR__ .'/data/dataProducts.php';
+require __DIR__ .'/models/AnimalProduct.php';
+require __DIR__ .'/models/DogProduct.php';
+require __DIR__ .'/models/CatProduct.php';
 
 ?>
 
@@ -18,7 +18,12 @@ require __DIR__ . '/models/CatProduct.php';
 </head>
 <body>
     <main>
+        <div class="container">
+            <div class="card">
+                
+            </div>
 
+        </div>
     </main>
 </body>
 </html>
