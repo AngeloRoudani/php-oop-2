@@ -20,11 +20,11 @@ class AnimalProduct {
 
     public function getInfoProduct() {
 
-        return '<div>'.$this->productName.'</div>
+        return '<h2>'.$this->productName.'</h2>
                 <img class="product-img" src="'.$this->productImage.'"/>
-                <div>'.$this->price.'</div>
-                <div>'.$this->category.'</div>
-                <div>'.$this->type.'</div>'
+                <div>Prezzo: '.$this->price.'</div>
+                <div>Prodotto: '.$this->category.'</div>
+                <div>Per '.$this->type.'</div>';
     }
 
 }

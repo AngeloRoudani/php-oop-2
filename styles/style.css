@@ -6,6 +6,7 @@
 
 body {
     background-image: url('../img/bg-img.jpg');
+    background-size: cover;
 }
 
 .container {
@@ -18,8 +19,15 @@ body {
 .card {
     width: calc(100% / 2);
     padding: 2rem;
+    color: white;
+    background-color: black;
 }
 
 .product-img {
     width: 100%;
+    background-color: white;
+}
+
+h2 {
+    text-align: center;
 }

@@ -1,6 +1,5 @@
 <?php
 
-require __DIR__ .'/data/dataProducts.php';
 
 class CatProduct extends AnimalProduct {
 
