@@ -5,6 +5,7 @@ require __DIR__.'/models/AnimalProduct.php';
 require __DIR__.'/models/DogProduct.php';
 require __DIR__.'/models/CatProduct.php';
 require __DIR__.'/data/dataProducts.php';
+require_once __DIR__ . '/Traits/Weightable.php';
 
 
 ?>
@@ -22,11 +23,29 @@ require __DIR__.'/data/dataProducts.php';
     <main>
         <div class="container">
             <div class="card">
-                <?php echo $flea->getInfoProduct(); ?>
+                <?php echo $flea->getInfoProduct();?>
+                <div>
+                <?php echo $flea->getWeight();
+                    try {
+                        echo $ball->calcDiscount();
+                    } catch (Exception $e) {
+                        var_dump($e);
+                        echo "Si è verificato un errore: " . $e->getMessage();
+                    } 
+                 ?>
+                </div>
+                
                 
             </div>
             <div class="card">
-                <?php echo $ball->getInfoProduct(); ?>
+                <?php echo $ball->getInfoProduct();
+                        try {
+                            echo $ball->calcDiscount();
+                        } catch (Exception $e) {
+                            var_dump($e);
+                            echo "Si è verificato un errore: " . $e->getMessage();
+                        } 
+                ?>
                 
             </div>
 
