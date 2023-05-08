@@ -27,7 +27,7 @@ require_once __DIR__ . '/Traits/Weightable.php';
                 <div>
                 <?php echo $flea->getWeight();
                     try {
-                        echo $ball->calcDiscount();
+                        echo $flea->calcDiscount();
                     } catch (Exception $e) {
                         var_dump($e);
                         echo "Si è verificato un errore: " . $e->getMessage();

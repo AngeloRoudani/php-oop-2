@@ -23,7 +23,7 @@ class AnimalProduct {
 
         return '<h2>'.$this->productName.'</h2>
                 <img class="product-img" src="'.$this->productImage.'"/>
-                <div>Prezzo: '.$this->price.'</div>
+                <div>Prezzo: '.$this->price.'€ </div>
                 <div>Prodotto: '.$this->category.'</div>
                 <div>Per '.$this->type.'</div>
                 <img class="kind" src="'.$this->kind.'"/>';

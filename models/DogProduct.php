@@ -24,7 +24,7 @@ class DogProduct extends AnimalProduct {
         if (!is_numeric($this->price)) {
             throw new Exception('Prezzo non definito');
         } else if (($this->price) > 15) {
-            return "<div> Hai uno sconto di" . ($this->price - (($this->price / 100) * 10)) . "</div>";
+            return "<div> Hai uno sconto di " . ($this->price - (($this->price / 100) * 90)) . " € </div>";
         }
 
     }
